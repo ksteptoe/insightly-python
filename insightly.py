@@ -769,7 +769,7 @@ class Insightly:
             f.write(json.dumps(records))
             f.close()
         else:
-            f = open(object_type + '.json', 'r')
+            f = open('insightly_data/' + object_type + '.json', 'r')
             records = json.loads(f.read())
             f.close()
         return records
